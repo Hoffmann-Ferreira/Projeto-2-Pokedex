@@ -1,0 +1,22 @@
+{
+  "name": "projeto-2-pokedex",
+  "version": "1.0.0",
+  "description": "Elaboração de uma Pokédex, uma forma de enciclopédia virtual, onde são armazenados dados de Pokémon.",
+  "main": "index.js",
+  "scripts": {
+    "start": "script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hoffmann-Ferreira/Projeto-2-Pokedex.git"
+  },
+  "author": "Andrei Hoffmann Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hoffmann-Ferreira/Projeto-2-Pokedex/issues"
+  },
+  "homepage": "https://github.com/Hoffmann-Ferreira/Projeto-2-Pokedex#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
