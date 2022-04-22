@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,25 @@
     <link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>Testando</h1>
-    <h2>Novo teste</h2>
-    <%= cavaleiros[1].nome  %> 
-    <% cavaleiros.forEach(elemento => { %>
-        <ul>
-            <li><%= elemento.nome %></li> 
-            <li><%= elemento.singno %></li> 
-        </ul>
+    <header>
+        <div id="cabecalho">
+            <img src="https://pokedex.sleduardo.dev/img/logo.svg" alt="Logo pokedex">
+        </div>
+    </header>
+    <main>
+
+    <% pokedex.forEach(elemento=> { %>
+        <div id="card">
+            <img src="<%= elemento.imagen %> " alt="Pokemon apresentado no site">
+            <h2><%= elemento.nome %> </h2>
+            <p><%= elemento.descrição %> </p>
+        
+        </div>
     <% }) %>
+   </main>
+   <footer>
+
+   </footer>
 </body>
+
 </html>
