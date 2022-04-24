@@ -51,7 +51,7 @@ let pokedex = [
     },
     {
         id: 3,
-        nome: "Charizard ",
+        nome: "Charizard",
         tipo:"Fire",
         imagen:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
         descrição:"It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.",
@@ -60,6 +60,40 @@ let pokedex = [
         categoria:"Flame",
         habilidade:"Blaze",
     },
+    {
+        id: 4,
+        nome: "Squirtle",
+        tipo:"Water",
+        imagen:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+        descrição:"When it retracts its long neck into its shell, it squirts out water with vigorous force.",
+        altura:"0.5 m",
+        peso:"9.0 Kg",
+        categoria:"Tiny Turtle",
+        habilidade:"Torrent",
+    },
+    {
+        id: 5,
+        nome: "Pidgey ",
+        tipo:"Flying",
+        imagen:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png",
+        descrição:"Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.",
+        altura:"0.3 m",
+        peso:"1.8 Kg",
+        categoria:"Tiny Bird",
+        habilidade:"Keen Eye",
+    },
+    {
+        id: 6,
+        nome: "Mewtwo ",
+        tipo:"Psychic",
+        imagen:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
+        descrição:"Its DNA is almost the same as Mew’s. However, its size and disposition are vastly different.",
+        altura:"2.0 m",
+        peso:"122.0 Kg",
+        categoria:"CategoryGenetic",
+        habilidade:"Pressure",
+    },
+
 ]
 
 
