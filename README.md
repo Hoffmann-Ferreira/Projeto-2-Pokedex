@@ -13,11 +13,11 @@ Módulos utilizados:
 *Nodemon
 Foram criadas rotas e renderizado os arquivos nas páginas. Utilização de um banco de dados simulado.
 
-<img src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/javascript.svg">
+<img src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/javascript.svg" height="150" width="150">
 
-<img src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/express.svg">
+<img src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/express.svg" height="150" width="150">
 
-<img src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/nodemon.svg">
+<img src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/nodemon.svg" height="150" width="150">
 
 
 
