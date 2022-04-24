@@ -21,8 +21,12 @@ app.get("/", (req, res) => {
 
 });
 
-app.get("/pokemon", (req, res) =>{
-    res.send("Eu sou a página do pokemon");
+app.get("/detalhes", (req, res) =>{
+    res.render("detalhes.ejs");
+}); 
+
+app.get("/cadastro", (req, res) =>{
+    res.render("cadastro.ejs");
 }); 
 //          A CIMA APENAS CONFIGURAÇÕES GERAIS
 
