@@ -20,4 +20,7 @@ Foram criadas rotas e renderizado os arquivos nas páginas. Utilização de um b
 <img src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/nodemon.svg" height="150" width="150">
 </div>
 
+## Contato
+
+ <a href="https://www.linkedin.com/in/advogadoandreihoffmann/" target="_blank"> <img src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/linkedin.svg" height="150" width="150"> </a>
 
