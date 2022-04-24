@@ -16,16 +16,23 @@
     <%- include("./partials/header.ejs")  %> 
     
     <main>
-
-    <% pokedex.forEach(elemento=> { %>
-        <div id="card">
-            <img src="<%= elemento.imagen %> " alt="Pokemon apresentado no site">
-            <h2><%= elemento.nome %> </h2>
-            <p><%= elemento.descrição %> </p>
-        
-        </div>
-    <% }) %>
-   </main>
+        <section>
+            <% pokedex.forEach(elemento=> { %>
+                <a href="/detalhes/<%= elemento.id %> ">
+                    <div id="card">
+                        <img src="<%= elemento.imagen %> " alt="Pokemon apresentado no site">
+                        <h2>
+                            <%= elemento.nome %>
+                        </h2>
+                        <p>
+                            <%= elemento.descrição %>
+                        </p>
+    
+                    </div>
+                </a>
+                <% }) %>
+        </section>
+    </main>
    <footer>
        <div id="rodape">
            <h3>Desenvovido por Andrei Hoffmann Ferreira</h3>

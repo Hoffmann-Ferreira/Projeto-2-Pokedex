@@ -49,10 +49,44 @@ main{
     width: 100%;
     min-height: 80%;
     display: flex;
-    flex-wrap: wrap;
     gap: 8%;
     margin-left: 4%;
     margin-top: 3%;
+}
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    width: 100%;
+    height: 100%;
+}
+main section a {
+    display: flex;
+    border: solid 1px blue;
+    background-image: url(/img/fundoCard.jpg);
+    width: 23%;
+    padding: 1%;
+    margin-bottom: 5%;
+    text-decoration:none;
+    
+}
+/* main  section #card{
+    border: solid 1px blue;
+    background-image: url(/img/fundoCard.jpg);
+    width: 23%;
+    padding: 1%;
+    margin-bottom: 5%;
+} */
+main  section a #card img{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+} */
+/* main a{
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 main #card{
     border: solid 1px blue;
@@ -65,7 +99,7 @@ main #card img{
     width: 100%;
     display: flex;
     justify-items: center;
-}
+} */
 footer #rodape{
     width: 100%;
     height: 5%;

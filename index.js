@@ -21,7 +21,14 @@ app.get("/", (req, res) => {
 
 });
 
-app.get("/detalhes", (req, res) =>{
+app.get("/detalhes/:id", (req, res) =>{
+    let pokemon = [];
+    pokedex.filter((elemento) =>{
+        if(elemento.id == req.params.id){
+            pokemon.push(elemento)
+
+        };
+    });
     res.render("detalhes.ejs");
 }); 
 
