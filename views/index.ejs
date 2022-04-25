@@ -21,12 +21,12 @@
                 <% pokedex.forEach(elemento=> { %>
                     <a href="/detalhes/<%= elemento.id %> ">
                         <div id="card">
-                            <img src="<%= elemento.imagen %> " alt="Pokemon apresentado no site">
+                            <img src="<%= elemento.imagem %> " alt="Pokemon <%= elemento.nome%> apresentado no site">
                             <h2>
                                 <%= elemento.nome %>
                             </h2>
                             <p>
-                                <%= elemento.descrição %>
+                                Descrição: <%= elemento.descricao %>
                             </p>
 
                         </div>

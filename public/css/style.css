@@ -1,95 +1,165 @@
-*{
-    margin: 0;
-    padding: 0;
+/* // página principal */
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    width: 98.9vw;
-    height: 100vh ;
-    background-image: url(../img/fundoGeral.jpg);
-    /* background-image: url(https://raw.githubusercontent.com/sleduardo20/pokedex/e382c98424b9fe947cbca363b6e979bc5bdf8db1/public/img/bgPokbola.svg); */
-    background-size: 100%;
-    background-color: #F5F5F5;
-    font-family: 'Bowlby One', cursiva;
+body {
+  width: 98.9vw;
+  height: 100vh;
+  background-image: url(https://raw.githubusercontent.com/sleduardo20/pokedex/e382c98424b9fe947cbca363b6e979bc5bdf8db1/public/img/bgPokbola.svg);
+  background-size: cover;
+  background-color: #f5f5f5;
+  font-family: "Bowlby One", cursiva;
 }
-header{
-    height: 10%;
-    width: 100%;
+header {
+  height: 15%;
+  width: 100%;
 }
-header #cabecalho{
-    width: 100%;
-    height: 100%;
-    background-color: #CC0000;
-    display: flex;
-    gap: 20%;
+header #cabecalho {
+  width: 100%;
+  height: 100%;
+  background-color: #cc0000;
+  display: flex;
+  gap: 16%;
+  font-size: larger;
 }
-header #cabecalho img{
-    height: 100%;
+header #cabecalho img {
+  height: 100%;
 }
-header nav{
-    width: 20%;
-    padding: 1%;
-    display: flex;
-    align-items: center;
+header nav {
+  width: 20%;
+  padding: 1%;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
 }
-header #navegacao{
-    display: flex;
-    gap: 5%;
-    width: 100%;
+header #navegacao {
+  display: flex;
+  gap: 10%;
+  width: 100%;
 }
-header #navegacao li{
-    list-style: none;
-    background-color: #CC0000;
-    text-align: center;
+header #navegacao li {
+  list-style: none;
+  background-color: #cc0000;
+  text-align: center;
 }
-header #navegacao li a{
-    text-decoration: none;
-    color:#EBEBEB;
-    font-size: 1em;
+header #navegacao li a {
+  text-decoration: none;
+  color: #ebebeb;
+  font-size: 1em;
 }
 
-main{
-    width: 90%;
-    min-height: 80%;
-    display: flex;
-    margin-left: 4%;
-    gap: 8%;
-    margin-top: 3%;
+main {
+  width: 90%;
+  min-height: 80%;
+  display: flex;
+  margin-left: 4%;
+  gap: 8%;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
-main section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4%;
-    width: 100%;
-    height: 100%;
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4%;
+  width: 100%;
+  height: 100%;
 }
 main section a {
-    display: flex;
-    border: solid 1px blue;
-    background-image: url(/img/fundoCard.jpg);
-    width: 20%;
-    padding: 1%;
-    margin-bottom: 5%;
-    text-decoration:none;
-    
+  display: flex;
+  border: solid 1px blue;
+  background-image: url(/img/fundoCard.jpg);
+  width: 20%;
+  padding: 1%;
+  margin-bottom: 5%;
+  text-decoration: none;
 }
-main  section a #card img{
+main section a #card img {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+}
+footer {
+  width: 98%;
+  height: 5%;
+  padding: 1%;
+  background-color: #cc0000;
+  display: flex;
+  /* position: fixed; */
+  /* bottom: 0;
+  right: 0; */
+}
+footer #rodape {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  color: #ebebeb;
+}
+footer #rodape a {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+footer #rodape img {
+  height: 100%;
+}
+/* Cadastro */
+#cadastro{
+    display: flex;
+    justify-content: center;
+}
+#cadastro #formulario{
+    display: flex;
+    width: 50%;
+}
+#cadastro #formulario form{
     width: 100%;
-    display: flex;
-    justify-items: center;
 }
-footer #rodape{
-    width: 98%;
-    height: 5%;
-    margin-top: 5%;
+
+#cadastro #formulario fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+    /* margin-bottom: 5%; */
+    border-radius: 25px;
+    background-color: #397CCA;
+    border: none;
+}
+#cadastro #formulario fieldset label{
+    font-size: 1.1em;
+    color: #ebebeb;
+
+}
+#cadastro #formulario fieldset input{
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 2%;
+    height: 1.2em;
     padding: 1%;
-    background-color: #CC0000;
-    color: #EBEBEB;
-    display: flex;
 }
-footer #rodape img{
-    width: 10%;
+#cadastro #formulario fieldset button{
+    width: 13%;
+    padding: 7%;
+    border-radius: 100%;
+    border: none;
+    background-image: url(/img/pokebolabutton.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: 40%;
 }
-footer #rodape img .git{
-    width: 5%;
+#cadastro #formulario fieldset button img{
+    width: 100%;
 }
+#cadastro #formulario fieldset p {
+    color: #ebebeb;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+   
