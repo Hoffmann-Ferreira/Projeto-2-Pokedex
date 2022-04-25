@@ -41,8 +41,12 @@ app.get("/cadastro", (req, res) =>{
 }); 
 
 app.post("/cadastro", (req, res) =>{
-    console.log(req.body)
-    res.send("Cadastro de Pokemon concluído");
+    let idAuto = pokedex[pokedex.length - 1].id + 1;
+
+    const {nome, numero, imagen} = req.body;
+    pokedex.push({id: idAuto, nome, numero, imagen});
+    res.redirect("/");
+    
 
 });
 
