@@ -12,28 +12,29 @@
     <link href="https: //fonts.googleapis.com/css2? family= Bowlby+One & display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    <%- include("./partials/header.ejs")  %> 
-    
-    <main>
-        <section>
-            <% pokedex.forEach(elemento=> { %>
-                <a href="/detalhes/<%= elemento.id %> ">
-                    <div id="card">
-                        <img src="<%= elemento.imagen %> " alt="Pokemon apresentado no site">
-                        <h2>
-                            <%= elemento.nome %>
-                        </h2>
-                        <p>
-                            <%= elemento.descrição %>
-                        </p>
-    
-                    </div>
-                </a>
-                <% }) %>
-        </section>
-    </main>
-    <%- include("./partials/footer.ejs")  %> 
+    <%- include("./partials/header.ejs") %>
+
+        <main>
+            <section>
+                <% pokedex.forEach(elemento=> { %>
+                    <a href="/detalhes/<%= elemento.id %> ">
+                        <div id="card">
+                            <img src="<%= elemento.imagen %> " alt="Pokemon apresentado no site">
+                            <h2>
+                                <%= elemento.nome %>
+                            </h2>
+                            <p>
+                                <%= elemento.descrição %>
+                            </p>
+
+                        </div>
+                    </a>
+                    <% }) %>
+            </section>
+        </main>
+        <%- include("./partials/footer.ejs") %>
 </body>
 
 </html>
