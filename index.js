@@ -5,8 +5,11 @@ const __dirname = path.resolve(path.dirname(""));
 
 const app = express();
 
+app.use(express.urlencoded({extended: true}));
+app.use(express.json())
+
 app.set("view engine", "ejs");
-app.use(express.static(path.join(__dirname, "public")))
+app.use(express.static(path.join(__dirname, "public")));
 
 const port = 3001
 
@@ -25,16 +28,24 @@ app.get("/detalhes/:id", (req, res) =>{
     let pokemon = [];
     pokedex.filter((elemento) =>{
         if(elemento.id == req.params.id){
-            pokemon.push(elemento)
-
+            pokemon.push(elemento);
         };
     });
-    res.render("detalhes.ejs");
+    res.render("detalhes.ejs", {
+        pokemon
+    });
 }); 
 
 app.get("/cadastro", (req, res) =>{
     res.render("cadastro.ejs");
 }); 
+
+app.post("/cadastro", (req, res) =>{
+    console.log(req.body)
+    res.send("Cadastro de Pokemon concluído");
+
+});
+
 //          A CIMA APENAS CONFIGURAÇÕES GERAIS
 
 let pokedex = [

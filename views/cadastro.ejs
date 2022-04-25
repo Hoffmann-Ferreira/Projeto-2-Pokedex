@@ -13,6 +13,19 @@
     </head>
 <body>
     <%- include("./partials/header.ejs")  %> 
-    
+    <main>
+        <div id = "cadastro">
+            <form method="post" action="/cadastro">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome">
+                <label for="numero">Numero:</label>
+                <input type="number" name="numero">
+                <label for="imagen">Imagen:</label>
+                <input type="url" name="imagen">
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+    </main>
 </body>
 </html>

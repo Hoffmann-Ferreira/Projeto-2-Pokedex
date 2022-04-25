@@ -12,6 +12,8 @@ Módulos utilizados:
 *Express
 *Nodemon
 Foram criadas rotas e renderizado os arquivos nas páginas. Utilização de um banco de dados simulado.
+
+
 <div style="display: flex;" style="gap: 10;">
 <img src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/javascript.svg" height="150" width="150">
 
@@ -22,5 +24,5 @@ Foram criadas rotas e renderizado os arquivos nas páginas. Utilização de um b
 
 ## Contato
 
- <a href="https://www.linkedin.com/in/advogadoandreihoffmann/" target="_blank"> <img src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/linkedin.svg" height="150" width="150"> </a>
+ <a href="https://www.linkedin.com/in/advogadoandreihoffmann/" target="_blank"> <img src="https://img.icons8.com/fluency/144/000000/linkedin.png"/></a>
 
