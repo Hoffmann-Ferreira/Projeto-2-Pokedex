@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Pokedex</title>
+    <link rel="icon" href="/img/iconSite.png"/>
     <link href="/css/style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +22,9 @@
                 <% pokedex.forEach(elemento=> { %>
                     <a href="/detalhes/<%= elemento.id %> ">
                         <div id="card">
+                            <p>
+                                <b>Numero:</b> <%= elemento.id %>
+                            </p>
                             <img src="<%= elemento.imagem %> " alt="Pokemon <%= elemento.nome%> apresentado no site">
                             <h2>
                                 <%= elemento.nome %>
