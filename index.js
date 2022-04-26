@@ -13,7 +13,7 @@ app.use(express.json())
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
-const port = 3005 || process.env.PORT
+const port = 3005 || "projeto-2-pokedex.vercel.app";
 
 app.listen(port,() => {
     
