@@ -11,7 +11,7 @@ app.use(express.json())
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
-const port = 3001
+const port = process.env.PORT || 3000;
 
 app.listen(port,() => {
     
