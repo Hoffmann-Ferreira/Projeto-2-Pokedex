@@ -88,9 +88,6 @@ footer {
   padding: 1%;
   background-color: #cc0000;
   display: flex;
-  /* position: fixed; */
-  /* bottom: 0;
-  right: 0; */
 }
 footer #rodape {
   width: 100%;
@@ -127,7 +124,6 @@ footer #rodape img {
   flex-direction: column;
   width: 100%;
   padding: 5%;
-  /* margin-bottom: 5%; */
   border-radius: 25px;
   background-color: #397cca;
   border: none;
@@ -181,4 +177,44 @@ footer #rodape img {
 }
 #detalhes img {
   margin-left: 10%;
+}
+
+/* configurando responsividade */
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  header #cabecalho img {
+    height: 50%;
+  }
+  main section a {
+    display: flex;
+    width: 45%;
+    padding: 2%;
+  }
+  footer {
+    width: 98%;
+    height: 5%;
+    padding: 1%;
+    padding-top: 2%;
+    position: fixed; 
+    bottom: 0;
+    right: 0;
+  }
+  #detalhes img {
+    width: 80%;
+  }
+  #detalhes .informacoes {
+    width: 80%;
+  }
+  #detalhes .pokemon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #cadastro #formulario {
+    width: 80%;
+  }
+
 }
