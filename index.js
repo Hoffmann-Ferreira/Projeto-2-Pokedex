@@ -5,6 +5,7 @@ import dotenv from 'dotenv'
 const __dirname = path.resolve(path.dirname(""));
 
 const app = express();
+dotenv.config();
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json())
