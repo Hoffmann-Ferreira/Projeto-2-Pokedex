@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -e js,html,css,ejs"
+    "dev": "nodemon -e js,html,css,ejs",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/Hoffmann-Ferreira/Projeto-2-Pokedex#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "ejs": "^3.1.7",
     "express": "^4.17.3"
   },

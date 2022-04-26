@@ -1,5 +1,6 @@
 import express from "express";
 import path, { dirname } from "path"
+import dotenv from 'dotenv'
 
 const __dirname = path.resolve(path.dirname(""));
 
@@ -11,7 +12,7 @@ app.use(express.json())
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
-const port = process.env.PORT || 3000;
+const port = 3005 || process.env.PORT
 
 app.listen(port,() => {
     
