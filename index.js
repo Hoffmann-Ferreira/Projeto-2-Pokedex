@@ -20,7 +20,7 @@ app.listen(port,() => {
 });
 
 app.get("/", (req, res) => {
-    res.render("index.ejs", {
+    res.status(200).render("index.ejs", {
         pokedex
     });
 
@@ -33,13 +33,13 @@ app.get("/detalhes/:id", (req, res) =>{
             pokemon.push(elemento);
         };
     });
-    res.render("detalhes.ejs", {
+    res.status(200).render("detalhes.ejs", {
         pokemon
     });
 }); 
 
 app.get("/cadastro", (req, res) =>{
-    res.render("cadastro.ejs");
+    res.status(200).render("cadastro.ejs");
 }); 
 
 app.post("/cadastro", (req, res) =>{
@@ -47,7 +47,7 @@ app.post("/cadastro", (req, res) =>{
 
     const {nome, tipo, imagem, descricao, altura, peso, categoria, habilidade} = req.body;
     pokedex.push({id: idAuto, nome, tipo, imagem, descricao, altura, peso, categoria, habilidade});
-    res.redirect("/");
+    res.status(200).redirect("/");
     
 
 });
